@@ -1,0 +1,24 @@
+.auth-page {
+  display: flex;
+  margin: 24px auto;
+  padding: 12px;
+  flex-direction: column;
+
+  .auth-page__input {
+    margin-top: 10px;
+  }
+}
+
+.auth-page__description {
+  padding: 12px 0;
+}
+
+.auth-page__actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+
+  .actions__erase {
+    margin-right: 12px;
+  }
+}
