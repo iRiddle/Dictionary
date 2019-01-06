@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 
-import Auth from '../Auth/Auth'
+import AuthSignUp from '../Auth/AuthSignUp'
 
 class MainSection extends Component {
   render() {
@@ -9,7 +9,7 @@ class MainSection extends Component {
       <Switch>
         <Route exact path="/" />
         <Route path="/signin"/>
-        <Route path="/signup" component = {Auth}/>
+        <Route path="/signup" component = {AuthSignUp}/>
       </Switch>
     );
   }

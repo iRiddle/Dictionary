@@ -4,29 +4,30 @@ import { Link } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import "./header.scss";
+import { Button } from "@material-ui/core";
 
 class Header extends Component {
   render() {
     return (
-      <div className="root">
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6" color="inherit" className="grow">
-              <Link to="/" className="link">
-                <Button color="inherit"> Словарь</Button>
-              </Link>
-            </Typography>
+      <AppBar position="static">
+        <Toolbar className="header">
+          <Typography variant="h6" className="logo">
+            <Link to="/" className="link">
+              Словарь
+            </Link>
+          </Typography>
+          <Typography variant="h6" style={{ marginRight: "12px" }}>
             <Link to="/signin" className="link">
-              <Button color="inherit">Вход</Button>
+              Вход
             </Link>
+          </Typography>
+          <Typography variant="h6">
             <Link to="/signup" className="link">
-              <Button color="inherit">Регистрация</Button>
+              Регистрация
             </Link>
-          </Toolbar>
-        </AppBar>
-      </div>
+          </Typography>
+        </Toolbar>
+      </AppBar>
     );
   }
 }

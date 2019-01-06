@@ -1,24 +1,46 @@
-.auth-page {
-  display: flex;
-  margin: 24px auto;
-  padding: 12px;
-  flex-direction: column;
+@import "../../styles/app.scss";
 
-  .auth-page__input {
-    margin-top: 10px;
+.container__form {
+  background: $cDarkGreen;
+
+  .form__description {
+    color: $cWhite;
+    margin: 24px 0 0 0;
+  }
+
+  .form__block-inputs {
+    display: flex;
+    height: calc(100vh - 200px);
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .form__input-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    .block-inputs__input::placeholder {
+      color: $cWhite;
+    }
+
+    .actions__erase {
+      margin-right: 24px;
+    }
+  }
+  .block-inputs_progress {
+    margin: 0 auto
   }
 }
 
-.auth-page__description {
-  padding: 12px 0;
+.content {
+  .content__charts {
+    margin-top: 15px;
+  }
 }
 
-.auth-page__actions {
-  margin-top: 12px;
-  display: flex;
-  justify-content: flex-end;
-
-  .actions__erase {
-    margin-right: 12px;
-  }
+.container__chart {
+  margin: 12px;
+  min-height: 250px;
+  min-width: 250px;
 }
